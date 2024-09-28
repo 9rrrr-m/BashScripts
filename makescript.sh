@@ -9,6 +9,14 @@ MakeNewFile() {
     cat << EOF > $ROOT/$FILENAME
 #!/bin/bash
 
+# Variable definition
+
+
+# Function definition
+
+
+# Main function
+
 
 EOF
 
