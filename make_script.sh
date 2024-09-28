@@ -5,17 +5,17 @@ ROOT=/root/scripts
 FILENAME=$1
 
 # Function definition
-MakeNewFile() {
+make_new_file() {
     cat << EOF > $ROOT/$FILENAME
 #!/bin/bash
 
-# Variable definition
+# Variable Definition
 
 
-# Function definition
+# Function Definition
 
 
-# Main function
+# Main Function
 
 
 EOF
@@ -25,7 +25,7 @@ EOF
     exit
 }
 
-Exit() {
+_exit() {
     echo "파일 생성을 중지합니다."
     exit
 }
@@ -37,11 +37,11 @@ if [ -f $FILENAME ] ; then
         echo -n "[ WARN ] 파일이 존재합니다. 새로 생성하겠습니까? (y/n): "
         read ANSWER
         case $ANSWER in
-            y|Y|yes|YES) MakeNewFile ;;
-            n|N|no|NO)   Exit ;;
+            y|Y|yes|YES) make_new_file ;;
+            n|N|no|NO)   _exit ;;
             *) continue ;;
         esac
     done
 else
-    MakeNewFile
+    make_new_file
 fi
