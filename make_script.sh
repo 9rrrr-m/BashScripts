@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Variable definition
+# Variable Definition
 ROOT=/root/scripts
 FILENAME=$1
 
-# Function definition
+# Function Definition
 make_new_file() {
     cat << EOF > $ROOT/$FILENAME
 #!/bin/bash
@@ -30,7 +30,7 @@ _exit() {
     exit
 }
 
-# Main function
+# Main Function
 if [ -f $FILENAME ] ; then
     while true
     do
