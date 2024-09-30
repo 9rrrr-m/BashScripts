@@ -12,4 +12,3 @@ smbuser1:x:5002:5002::/home/smbuser1:/sbin/nologin
 smbuser2:x:5003:5003::/home/smbuser2:/sbin/nologin
 smbuser3:x:5004:5004::/home/smbuser3:/sbin/nologin
 smbuser4:x:5005:5005::/home/smbuser4:/sbin/nologin
-hello sweety
