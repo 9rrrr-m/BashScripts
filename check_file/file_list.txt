@@ -1,0 +1,3 @@
+/root/scripts/check_file/passwd
+/root/scripts/check_file/hosts
+/root/scripts/check_file/group
