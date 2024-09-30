@@ -1,0 +1,3 @@
+[ WARN ]  /root/scripts/check_file/passwd
+[  OK  ]  /root/scripts/check_file/hosts
+[  OK  ]  /root/scripts/check_file/group
