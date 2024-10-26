@@ -7,6 +7,7 @@ END=230
 TERM=1
 
 # Main Function
+# ping test
 while [ $START -le $END ]
 do
     ping -c 1 ${NET}${START} > /dev/null 2>&1
@@ -17,3 +18,8 @@ do
     fi
     START=`expr $START + $TERM`
 done
+
+# ARP caching table print
+echo "============== ARP Caching Table =============="
+arp -an | grep $NET
+echo ; echo
